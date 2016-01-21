@@ -41,6 +41,9 @@ end
 #   end
 # end
 
+#Set HAML template
+set :haml, { :ugly => true, :format => :html5 }
+
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
