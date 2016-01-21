@@ -5,6 +5,7 @@ title: Middleman 4 Boilerplate
 / PUT YOUR CONTENT FOR THE HOMEPAGE HERE
 / DELETE THIS
 
+= partial "partials/navigation"
 = partial "partials/watermark"
 
 .container
@@ -13,3 +14,38 @@ title: Middleman 4 Boilerplate
       Content Left
     .col-md-6
       Content Right
+
+  .row
+    %img{:src => lorem.image('300x400'), :alt => ""}/
+
+
+  .row
+    .col-xs-12.hidden-xs
+      Hidden in XS
+    .col-xs-12.hidden-sm
+      Hidden in sm
+    .col-xs-12.hidden-md
+      Hidden in md
+    .col-xs-12.hidden-lg
+      Hidden in lg
+
+  .row
+    = lorem.sentence      # returns a single sentence
+    %br/
+    = lorem.words 5       # returns 5 individual words
+    %br/
+    = lorem.word
+    %br/
+    = lorem.paragraphs 10 # returns 10 paragraphs
+    %br/
+    = lorem.paragraph
+    %br/
+    = lorem.date          # accepts a strftime format argument
+    %br/
+    = lorem.name
+    %br/
+    = lorem.first_name
+    %br/
+    = lorem.last_name
+    %br/
+    = lorem.email
