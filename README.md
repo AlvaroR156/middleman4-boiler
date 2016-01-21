@@ -89,16 +89,33 @@ This step requires a heroku account
 Create an app (Run Once)
 ```shell
 heroku create <<MYAPP>>
+
+or just 'heroku create' to create a random name
+
 ```
 
 Initial Setup (Run Once)
 ```shell
 heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
 ```
+```shell
+#if you get error 'Push rejected, failed to detect set buildpack'
+heroku buildpacks:set heroku/ruby
+```
 
 Deploying (Every deploy)
 ```shell
 git push heroku master
+```
+
+Ensure that at least one instance of the app is running
+```shell
+heroku ps:scale web=1
+```
+
+Open the website
+```shell
+heroku open
 ```
 
 ####Middleman Helper Methods
