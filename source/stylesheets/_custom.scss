@@ -2,6 +2,38 @@
 
 // $screen-sm: 450px;
 
+$marginTopBody: 80px;
+$window_title_img: image-url('toolbar.png');
+$lionbox: #ECC561 !default;
+
+// @mixin breakpoint($point)
+//   @if $point == lg
+//     @media (min-width: 1200px)
+//       @content
+
+//   @else if $point == md
+//     @media (min-width: 992px) and (max-width: 1199px)
+//       @content
+
+//   @else if $point == sm
+//     @media (min-width: 768px) and (max-width: 991px)
+//       @content
+
+//   @else if $point == xs
+//     @media (max-width: 767px) and (min-width: 641px)
+//       @content
+
+//   @else if $point == xxs
+//     @media (max-width: 640px) and (min-width: 481px)
+//       @content
+
+//   @else if $point == xxxs
+//     @media  (max-width: 480px)
+//       @content
+
+body.index {
+    margin-bottom: 100px;
+}
 
 #particles-js {
   width: 100%;
@@ -18,18 +50,50 @@
   z-index:1;
 }
 
+
 section#top-section {
   width: 100%;
   height: 100%;
   margin-bottom: 0;
   z-index: 1;
-  background: url(  image_path('yellow-metal-design-decoration.jpg') ) no-repeat;
+  background: image-url('yellow-metal-design-decoration.jpg') no-repeat;
   background-size: cover;
   background-position: 0% 100%;
+      box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    border-radius: 2px;
+    border: 0;
 }
 
 section .header{
   // background-color: rgba(255,255,255,0.3);
   // background-color: none;
   padding: 6rem;
+}
+
+section#projects {
+  margin-top: 50px;
+  .project-item{
+    margin-bottom: 30px
+  }
+}
+img.window_panel {
+    width: 100%;
+}
+
+.window_panel {
+  background-image: $window_title_img;
+  background-position: 100% 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  padding-top: 3.2%;
+  // @include breakpoint(lg) {
+  //   padding-top: 2.7%;
+  // }
+
+  margin-top: 30px;
+}
+
+.lionbox {
+  background: $lionbox;
 }
