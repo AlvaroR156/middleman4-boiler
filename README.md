@@ -10,7 +10,7 @@ There is also a partial/template for meta info on most social networks.
 ####Technologies Used
 * Ruby
 * Middleman v4
-* ERB
+* HAML
 * HTML5
 * CSS3
 * SASS
@@ -84,12 +84,14 @@ end
 ```
 
 ####Deploy
-This step requires a heroku account
+This step requires a heroku account and the [heroku toolbelt](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
 
 Create an app (Run Once)
 ```shell
 heroku create <<MYAPP>>
+```
 
+```shell
 or just 'heroku create' to create a random name
 
 ```
@@ -98,6 +100,7 @@ Initial Setup (Run Once)
 ```shell
 heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
 ```
+
 ```shell
 #if you get error 'Push rejected, failed to detect set buildpack'
 heroku buildpacks:set heroku/ruby
