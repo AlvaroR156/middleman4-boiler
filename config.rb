@@ -2,6 +2,19 @@
 # Page options, layouts, aliases and proxies
 ###
 
+# Change Compass configuration
+compass_config do |config|
+  config.add_import_path "bower_components/foundation-sites/scss/"
+  config.output_style = :compact
+
+  # Set this to the root of your project when deployed:
+  config.http_path = "/"
+  config.css_dir = "stylesheets"
+  config.sass_dir = "stylesheets"
+  config.images_dir = "images"
+  config.javascripts_dir = "javascripts"
+end
+
 # Per-page layout changes:
 #
 # With no layout
