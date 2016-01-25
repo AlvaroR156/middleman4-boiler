@@ -14,6 +14,7 @@ There is also a partial/template for meta info on most social networks.
 * HTML5
 * CSS3
 * SASS
+* Bower
 * jQuery
 * Font Awesome
 * Minify HTML gem
@@ -29,6 +30,11 @@ cd middleman4-boiler
 From the "middleman4-boiler" directory, install the gems by running the following:
 ```shell
 bundle install
+```
+
+Install dependencies from bower. (Foundation)
+```shell
+bower install
 ```
 
 To fire up the server while in the "middleman4-boiler" directory use this command:
@@ -104,6 +110,16 @@ heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-mult
 ```shell
 #if you get error 'Push rejected, failed to detect set buildpack'
 heroku buildpacks:set heroku/ruby
+```
+
+```shell
+#if you have already publish your app and your cloning the repo in a new working folder
+#Check first
+git remote -v
+#Add Heroku
+heroku git:remote
+#Check later
+git remote -v
 ```
 
 Deploying (Every deploy)

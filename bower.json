@@ -9,6 +9,7 @@
     "tests"
   ],
   "dependencies": {
-    "foundation-sites": "~6.1.1"
+    "foundation-sites": "~6.1.1",
+    "particles.js": "~2.0.0"
   }
 }
