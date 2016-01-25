@@ -1,18 +1,17 @@
 {
   "name": "middleman4-boiler",
-  "version": "0.0.2",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.12.7",
+    "npm": "2.11.3"
+  },
   "dependencies": {
+    "bower": "^1.7.2",
     "foundation-sites": "~6.1.1",
     "particles.js": "~2.0.0"
   },
   "scripts": {
+    "start": "bundle exec middleman server -p '8080'",
     "postinstall": "bower install"
   }
 }
