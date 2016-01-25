@@ -1,0 +1,7 @@
+{
+  "name": "middleman4-boiler",
+  "version": "0.0.1",
+  "scripts": {
+    "postinstall": "bower install"
+  }
+}
