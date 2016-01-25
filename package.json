@@ -11,7 +11,7 @@
     "particles.js": "~2.0.0"
   },
   "scripts": {
-    "start": "bundle exec middleman",
+    "start": "bundle exec middleman server -p '8080'",
     "postinstall": "bower install"
   }
 }
