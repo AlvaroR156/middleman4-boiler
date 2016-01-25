@@ -11,7 +11,7 @@
     "particles.js": "~2.0.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "bundle exec middleman",
     "postinstall": "bower install"
   }
 }
