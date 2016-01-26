@@ -9,8 +9,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     backports (3.6.7)
-    bower (0.0.5)
-      multi_json
+    bower-rails (0.10.0)
     capybara (2.5.0)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -147,7 +146,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bower
+  bower-rails (~> 0.10.0)
   font-awesome-middleman
   middleman (>= 4.0.0)
   middleman-compass (>= 4.0.0)
