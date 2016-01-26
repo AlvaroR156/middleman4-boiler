@@ -15,6 +15,7 @@ gem 'middleman-livereload'
 gem 'middleman-compass', '>= 4.0.0'
 gem "middleman-sprockets", "~> 4.0.0.rc"
 # Additional Gems
+gem "bower-rails", "~> 0.10.0"
 gem 'font-awesome-middleman'
 gem 'middleman-minify-html'
 gem 'middleman-google-analytics', '~> 2.0'
